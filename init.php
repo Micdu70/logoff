@@ -1,7 +1,7 @@
 <?php
-eval(getPluginConf("logoff"));
+eval( FileUtil::getPluginConf("logoff") );
 
-$me = getUser();
+$me = User::getUser();
 $users = array();
 
 $dirs = scandir($rootPath . "/share/users/");
